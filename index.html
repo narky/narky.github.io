@@ -69,6 +69,55 @@
     <div class="outer">
       <section id="main">
   
+    <article id="post-my-bashrc-for-mac" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/07/my-bashrc-for-mac/" class="article-date">
+  <time datetime="2016-04-07T06:41:52.000Z" itemprop="datePublished">2016-04-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/04/07/my-bashrc-for-mac/">一些用得到的MAC下面的bashrc配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=<span class="variable">$JAVA_6_HOME</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> jdk8=<span class="string">'export JAVA_HOME=$JAVA_8_HOME'</span></span><br><span class="line"><span class="built_in">alias</span> jdk7=<span class="string">'export JAVA_HOME=$JAVA_7_HOME'</span></span><br><span class="line"><span class="built_in">alias</span> jdk6=<span class="string">'export JAVA_HOME=$JAVA_6_HOME'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> flushdns=<span class="string">'sudo killall -HUP mDNSResponder'</span></span><br><span class="line"><span class="built_in">alias</span> resetLunchpad=<span class="string">'defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'</span></span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<ol>
+<li>切换JAVA环境，使用命令 <code>jdk8</code> <code>jdk7</code> <code>jdk6</code> 就可以切换本机的JAVA环境，以便于需要不同java版本的开发调试工作</li>
+<li>命令 <code>flushdns</code> 可以快速的清除本机的dns缓存，用于切换hosts以后有缓存不及时生效的情况</li>
+<li>命令 <code>resetLunchpad</code> 更新Dock和lanchpad的app列表缓存并重置Dock</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.imhx.me/2016/04/07/my-bashrc-for-mac/" data-id="cimpxlshc000evslantasp1bx" class="article-share-link" data-share="baidu" data-title="一些用得到的MAC下面的bashrc配置">分享到</a>
+      
+
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-a-new-amazing-editor-atom" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/04/06/a-new-amazing-editor-atom/" class="article-date">
@@ -115,7 +164,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://blog.imhx.me/2016/04/06/a-new-amazing-editor-atom/" data-id="cimpwtd4p0000zplao6kc60uc" class="article-share-link" data-share="baidu" data-title="从Sublime Text转向另一个神器Atom">分享到</a>
+        <a data-url="http://blog.imhx.me/2016/04/06/a-new-amazing-editor-atom/" data-id="cimpxlsgp0000vslakimtynna" class="article-share-link" data-share="baidu" data-title="从Sublime Text转向另一个神器Atom">分享到</a>
       
 
       
@@ -164,7 +213,7 @@
     </div>
     <footer class="article-footer">
       
-        <a data-url="http://blog.imhx.me/2016/04/05/first-blog-by-hexo/" data-id="cimpwtd5i0009zplaimvg5jpf" class="article-share-link" data-share="baidu" data-title="今天使用HEXO搭个博客来写点东西">分享到</a>
+        <a data-url="http://blog.imhx.me/2016/04/05/first-blog-by-hexo/" data-id="cimpxlsgt0001vsla816qaa6l" class="article-share-link" data-share="baidu" data-title="今天使用HEXO搭个博客来写点东西">分享到</a>
       
 
       
@@ -197,7 +246,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/">atom</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑器/">编辑器</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/atom/">atom</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bash/">bash</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sublime/">sublime</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/其他/">其他</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/编辑器/">编辑器</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -206,7 +255,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a>
+      <a href="/tags/atom/" style="font-size: 10px;">atom</a> <a href="/tags/bash/" style="font-size: 10px;">bash</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/sublime/" style="font-size: 10px;">sublime</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/编辑器/" style="font-size: 10px;">编辑器</a>
     </div>
   </div>
 
@@ -215,7 +264,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">四月 2016</a><span class="archive-list-count">3</span></li></ul>
     </div>
   </div>
 
@@ -225,6 +274,10 @@
     <h3 class="widget-title">近期文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2016/04/07/my-bashrc-for-mac/">一些用得到的MAC下面的bashrc配置</a>
+          </li>
         
           <li>
             <a href="/2016/04/06/a-new-amazing-editor-atom/">从Sublime Text转向另一个神器Atom</a>

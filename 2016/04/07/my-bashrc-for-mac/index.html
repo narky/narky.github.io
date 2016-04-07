@@ -4,17 +4,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2016/4 | HX杂货铺</title>
+  <title>一些用得到的MAC下面的bashrc配置 | HX杂货铺</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="HX杂货铺">
-<meta property="og:url" content="http://blog.imhx.me/archives/2016/04/index.html">
+  <meta name="description" content="1234567891011export JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Homeexport JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0.jdk/Contents/Homeexport JAVA_8_HOME=/Library/Java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="一些用得到的MAC下面的bashrc配置">
+<meta property="og:url" content="http://blog.imhx.me/2016/04/07/my-bashrc-for-mac/index.html">
 <meta property="og:site_name" content="HX杂货铺">
-<meta property="og:description">
+<meta property="og:description" content="1234567891011export JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Homeexport JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0.jdk/Contents/Homeexport JAVA_8_HOME=/Library/Java">
+<meta property="og:updated_time" content="2016-04-07T06:50:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="HX杂货铺">
-<meta name="twitter:description">
+<meta name="twitter:title" content="一些用得到的MAC下面的bashrc配置">
+<meta name="twitter:description" content="1234567891011export JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Homeexport JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0.jdk/Contents/Homeexport JAVA_8_HOME=/Library/Java">
   
     <link rel="alternative" href="/atom.xml" title="HX杂货铺" type="application/atom+xml">
   
@@ -67,77 +68,65 @@
   </div>
 </header>
     <div class="outer">
-      <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/04/07/my-bashrc-for-mac/" class="archive-article-date">
-  <time datetime="2016-04-07T06:41:52.000Z" itemprop="datePublished">4月 7</time>
+      <section id="main"><article id="post-my-bashrc-for-mac" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/04/07/my-bashrc-for-mac/" class="article-date">
+  <time datetime="2016-04-07T06:41:52.000Z" itemprop="datePublished">2016-04-07</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/04/07/my-bashrc-for-mac/">一些用得到的MAC下面的bashrc配置</a>
+    <h1 class="article-title" itemprop="name">
+      一些用得到的MAC下面的bashrc配置
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/04/06/a-new-amazing-editor-atom/" class="archive-article-date">
-  <time datetime="2016-04-06T11:40:34.000Z" itemprop="datePublished">4月 6</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/04/06/a-new-amazing-editor-atom/">从Sublime Text转向另一个神器Atom</a>
-    </h1>
-  
+        <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> JAVA_6_HOME=/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_7_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_8_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home</span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=<span class="variable">$JAVA_6_HOME</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> jdk8=<span class="string">'export JAVA_HOME=$JAVA_8_HOME'</span></span><br><span class="line"><span class="built_in">alias</span> jdk7=<span class="string">'export JAVA_HOME=$JAVA_7_HOME'</span></span><br><span class="line"><span class="built_in">alias</span> jdk6=<span class="string">'export JAVA_HOME=$JAVA_6_HOME'</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">alias</span> flushdns=<span class="string">'sudo killall -HUP mDNSResponder'</span></span><br><span class="line"><span class="built_in">alias</span> resetLunchpad=<span class="string">'defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'</span></span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<ol>
+<li>切换JAVA环境，使用命令 <code>jdk8</code> <code>jdk7</code> <code>jdk6</code> 就可以切换本机的JAVA环境，以便于需要不同java版本的开发调试工作</li>
+<li>命令 <code>flushdns</code> 可以快速的清除本机的dns缓存，用于切换hosts以后有缓存不及时生效的情况</li>
+<li>命令 <code>resetLunchpad</code> 更新Dock和lanchpad的app列表缓存并重置Dock</li>
+</ol>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/04/05/first-blog-by-hexo/" class="archive-article-date">
-  <time datetime="2016-04-05T06:45:13.000Z" itemprop="datePublished">4月 5</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/04/05/first-blog-by-hexo/">今天使用HEXO搭个博客来写点东西</a>
-    </h1>
-  
+    </div>
+    <footer class="article-footer">
+      
+        <a data-url="http://blog.imhx.me/2016/04/07/my-bashrc-for-mac/" data-id="cimpxlshc000evslantasp1bx" class="article-share-link" data-share="baidu" data-title="一些用得到的MAC下面的bashrc配置">分享到</a>
+      
 
-    </header>
+      
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/">bash</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/04/06/a-new-amazing-editor-atom/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">从Sublime Text转向另一个神器Atom</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
       
       <aside id="sidebar">
